@@ -1,0 +1,14 @@
+.caja{  
+    height: 10px;
+    border-radius: 3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: grey; 
+  }
+
+.caja2{  
+    height: 40px;
+    border-radius: 3rem;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+  }
