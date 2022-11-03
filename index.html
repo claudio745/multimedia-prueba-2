@@ -27,7 +27,37 @@
         <div class="row caja2"></div>
         <div class="container">
             <div class="row" style="height: 600px; background-color: red">
-                <div class="col-8">Formulario</div>
+                <div class="col-8"> <h3>Formulario</h3>
+                    <br>
+                    <form  method= "POST" enctype = "multipart/form-data"> 
+                        <label for="Nombres"> Nombres: </label>
+                        <input type="text" name="Nombres" id="Nombres">
+                        <br><br>
+                        <label for="Apellidos"> Apellidos: </label>
+                        <input type="text" name="Apellidos" id="Apellidos">
+                        <br><br>
+                        <label> Rut: </label>
+                        <input type="text" name="Rut" id="Rut">
+                        <br><br>
+                        <label> Fecha de nacimiento: </label>
+                        <input type="datetime" name="fecha" id="fecha"> 
+                        <br><br>
+                        <label>Nacionalidad: </label>
+
+                        <br><br>
+                        <label>Genero: </label>
+
+                        <br><br>
+                        <label>Ciudad de residencia: </label>
+                        <input type="text" name="ciudad" id="ciudad">
+                        <br><br>
+                        <label> Foto: </label>
+                        <input type = "file" name = "imagen"><br><br>
+                        <input type="submit" value="Enviar formulario">
+                    </form>
+
+
+                </div>
                 <div class="col-4">LINK</div>
             </div>
         </div>
