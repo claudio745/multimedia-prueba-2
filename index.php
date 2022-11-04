@@ -49,15 +49,10 @@
                             <option value="Uruguaya">Uruguaya</option>
                         <br>
                         </select>
-
-                        <fieldset>
-                            <legend> Genero </legend>
-                            <input type = "radio" name= "genero1" id="genero1">
-                            <label for="genero1"> Hombre </label>  
-                            <input type = "radio" name= "genero1" id="genero1">
-                            <label for="genero1"> Mujer </label>  
-                        </fieldset>
-                        <br>
+                        <br><br>
+                        <label> Genero: </label>
+                        <input type="text" name="genero1" id="genero1"> 
+                        <br><br>
                         <label>Ciudad de residencia: </label>
                         <input type="text" name="ciudad" id="ciudad">
                         <br><br>
