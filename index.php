@@ -37,10 +37,10 @@
                         <input type="text" name="Apellidos" id="Apellidos">
                         <br><br>
                         <label> Rut: </label>
-                        <input type="text" name="Rut" id="Rut">
+                        <input type="text" name="Rut" id="Rut" placeholder="11111111-1"/>
                         <br><br>
                         <label> Fecha de nacimiento: </label>
-                        <input type="datetime" name="fecha" id="fecha"> 
+                        <input type="text" name="fecha" id="fecha" placeholder= "mm/dd/yyyy"/> 
                         <br><br>
                         <label> Nacionalidad: </label> 
                         <select name="nacionalidad" id="nacionalidad">
