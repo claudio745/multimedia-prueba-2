@@ -40,7 +40,7 @@
                         <input type="text" name="Rut" id="Rut" placeholder="11111111-1"/>
                         <br><br>
                         <label> Fecha de nacimiento: </label>
-                        <input type="text" name="fecha" id="fecha" placeholder= "mm/dd/yyyy"/> 
+                        <input type="date" name="fecha" id="fecha" value="2022-11-04" min="1900-01-01" max="2004-01-01"> 
                         <br><br>
                         <label> Nacionalidad: </label> 
                         <select name="nacionalidad" id="nacionalidad">
@@ -66,7 +66,7 @@
         </div>
         <div class="row caja2"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: #8ae9fc">
+            <div class="row" style="height: 100px; background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
             </div>
         </div>
