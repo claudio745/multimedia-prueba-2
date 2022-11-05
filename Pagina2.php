@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="row caja2"></div>
+        <div class="row caja"></div>
         <div class="container">
             <div class="row" style="height: 600px; background-color: #E3DAC9">
                 <div class="col">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="row caja2"></div>
+        <div class="row caja"></div>
         <div class="container">
             <div class="row" style="height: 100px; background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
