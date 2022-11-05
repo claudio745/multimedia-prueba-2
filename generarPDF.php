@@ -1,32 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pdf.css">
+<?php 
 
-    <title>PDF</title>
-</head>
-<body>
-    <div class="cuerpo">
-        <div class="arriba"></div>
-        <br></br>
-        <div class="abajo"></div>
-        <div class="hora">
-            <div id="current_date">
-                <script>
-                    date = new Date();
-                    year = date.getFullYear();
-                    month = date.getMonth() + 1;
-                    day = date.getDate();
-                    hora = date.getHours();
-                    minutos = date.getMinutes();
-                    segundos = date.getSeconds();
-                    document.getElementById("current_date").innerHTML = "Fecha: " + day + " / " + month + " / " + year + " " + "Hora: " + hora + ":" + minutos + ":" + segundos;
-                </script>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+function crearPDF($nombre)
+{
+	ob_start();
+	include('pdf.php');
+	$content = ob_get_clean();
+
+
+	try {
+
+		require_once('html2pdf-5.2.5');
+		$html2pdf = new HTML2PDF('P', 'LETTER', 'es', true, 'UTF-8');
+		$html2pdf->pdf->SetDisplayMode('fullpage');
+
+		$html2pdf->pdf->SetTitle("PDF");
+
+		$html2pdf->writeHTML($content);
+		ob_end_clean();
+
+		$html2pdf->Output($nombre.'.pdf', 'D');
+		
+	} catch (HTML2PDF_exception $e) {
+		echo $e;
+		exit;
+	}
+}
+
+crearPDF("pdf");
+ ?>
