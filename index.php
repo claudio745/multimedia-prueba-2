@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="row caja"></div>
+        <div class="row caja2"></div>
         <div class="container">
             <div class="row" style="height: 600px; background-color: #E3DAC9">
                 <div class="col-8"> <h3>Formulario</h3>
@@ -57,14 +57,14 @@
                         <input type="text" name="ciudad" id="ciudad">
                         <br><br>
                         <label> Foto: </label>
-                        <input type = "file" name = "imagen"><br><br>
+                        <input type = "file" REQUIRED name = "imagen"><br><br>
                         <input type="submit" value="Enviar formulario">
                     </form>
                 </div>
                 <div class="col-4">LINK</div>
             </div>
         </div>
-        <div class="row caja"></div>
+        <div class="row caja2"></div>
         <div class="container">
             <div class="row" style="height: 100px; background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
