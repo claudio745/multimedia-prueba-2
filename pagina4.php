@@ -15,7 +15,7 @@
     <div class="container" style="background-color: gray">
         <div class="row caja"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: blue">
+            <div class="row" style="height: 100px; background-color: #d9afa2">
                 <div class="col d-flex justify-content-center">Menu de navegacion:
                     <a href = "pagina3.php"><button type="button" class="btn btn-link">Inicio</button></a>|
                     <a href = "index.php"><button type="button" class="btn btn-link">Ingresar Persona</button></a>|
@@ -26,17 +26,17 @@
         </div>
         <div class="row caja2"></div>
         <div class="container">
-            <div class="row" style="height: 300px; background-color: red">
+            <div class="row" style="height: 300px; background-color: #E3DAC9">
                 <div class="col">Estadistica</div>
             </div>
             <div class="row caja2"></div>
-            <div class="row" style="height: 300px; background-color: yellow">
+            <div class="row" style="height: 300px; background-color: #E3DAC9">
                 <div class="col">Grafico</div>
             </div>
         </div>
         <div class="row caja2"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: green">
+            <div class="row" style="height: 100px; background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
             </div>
         </div>
