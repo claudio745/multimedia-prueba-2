@@ -29,7 +29,7 @@
             <div class="row" style="height: 300px; background-color: #E3DAC9">
                 <div class="col">Estadistica</div>
             </div>
-            <div class="row caja"></div>
+            <div class="row cajaa"></div>
             <div class="row" style="height: 300px; background-color: #E3DAC9">
                 <div class="col">Grafico</div>
             </div>
