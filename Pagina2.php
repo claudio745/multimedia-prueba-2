@@ -43,7 +43,7 @@
                         </tr>
 
                         <?php
-                        //Seleciono todo de la tabla noticia
+                        //Seleciono de la tabla
                         $sql="SELECT nombres, apellidos, rut FROM datos";
                         $result=mysqli_query($conexion, $sql);
 
