@@ -8,16 +8,14 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          ['Nacionalidad', 'Usuarios'],
+          ['Chileno',     11],
+          ['Canadiense',      2],
+          ['Uruguaya',  2],
         ]);
 
         var options = {
-          title: 'My Daily Activities'
+          title: 'Estadistica Usuarios'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
