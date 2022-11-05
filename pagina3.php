@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="container" style="background-color: gray">
-        <div class="row caja"></div>
         <div class="container">
             <div class="row" style="height: 100px; background-color: #d9afa2">
                 <div class="col d-flex justify-content-center">Menu de navegacion:
