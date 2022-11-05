@@ -35,7 +35,7 @@
                     $pasword = "";
                     $db = "bd_prueba_2";
                     $conexion = mysqli_connect($host, $usuario, $pasword, $db);
-
+                
                     ?>   
                     <table class="table table-bordered">
                         <tr>
@@ -51,7 +51,7 @@
 
                         <?php
                         //Seleciono todo de la tabla noticia
-                        $sql="SELECT * FROM datos";
+                        $sql="SELECT * FROM datos WHERE rut=rut";
                         $result=mysqli_query($conexion, $sql);
                     
 
@@ -68,7 +68,7 @@
                             <td><?php echo $mostrar['genero']?></td>
                             <td><?php echo $mostrar['ciudad_residencia']?></td>
                             <td><img height="100px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/></td>
-                            
+                       
 
                         </tr>
 
