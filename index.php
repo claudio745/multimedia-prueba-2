@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="container" style="background-color: gray">
-        <div class="row caja"></div>
         <div class="container">
             <div class="row" style="height: 100px; background-color: #d9afa2">
                 <div class="col d-flex justify-content-center">Menu de navegacion:
@@ -24,7 +23,6 @@
                 </div>
             </div>
         </div>
-        <div class="row caja2"></div>
         <div class="container">
             <div class="row" style="height: 600px; background-color: #E3DAC9">
                 <div class="col-8"> <h3>Formulario</h3>
@@ -51,7 +49,11 @@
                         </select>
                         <br><br>
                         <label> Genero: </label>
-                        <input type="text" name="genero1" id="genero1"> 
+                        <select name="genero" id="genero">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        <br>
+                        </select>
                         <br><br>
                         <label>Ciudad de residencia: </label>
                         <input type="text" name="ciudad" id="ciudad">
@@ -64,13 +66,15 @@
                 <div class="col-4">LINK</div>
             </div>
         </div>
-        <div class="row caja2"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: #B0E0DA">
-                <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
+            <div class="row" style="background-color: #B0E0DA">
+                <div class="col">Tecnología Multimedia CIF 6459-1</div>
+                <div class="col d-flex justify-content-end">Fecha de entrega: 06/11/2022</div>
+            </div>
+            <div class="row" style="background-color: #B0E0DA">
+                <div class="col d-flex justify-content-end">Nombre integrantes: Jose Meza, Claudio Alfaro</div>
             </div>
         </div>
-        <div class="row caja"></div>
     </div>
 </body>
 </html>
