@@ -58,9 +58,8 @@
                             <td><?php echo $mostrar['nombres']?></td>
                             <td><?php echo $mostrar['apellidos']?></td>
                             <td><?php echo $mostrar['rut']?></td>
-                            <td><button type="button" class="btn btn-info">Ver Perfil</button></td>
-                            <td><button type="button" class="btn btn-danger">Descargar PDF</button></td>
-
+                            <td><a href="pagina3.php"><button type="button" class="btn btn-info">Ver Perfil</button></a></td>
+                            <td><a href="pagina3.php"><button type="button" class="btn btn-danger">Descargar PDF</button></a></td>
                         </tr>
 
                         <?php
