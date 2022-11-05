@@ -15,7 +15,7 @@
     <div class="container" style="background-color: gray">
         <div class="row caja"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: blue">
+            <div class="row" style="height: 100px; background-color: #d9afa2">
             <div class="col d-flex justify-content-center">Menu de navegacion:
                     <a href = "pagina3.php"><button type="button" class="btn btn-link">Inicio</button></a>|
                     <a href = "index.php"><button type="button" class="btn btn-link">Ingresar Persona</button></a>|
@@ -26,13 +26,60 @@
         </div>
         <div class="row caja2"></div>
         <div class="container">
-            <div class="row" style="height: 600px; background-color: red">
-                <div class="col">Tabla</div>
+            <div class="row" style="height: 600px; background-color: #E3DAC9">
+                <div class="col">
+                    <?php
+                    //Conexion con bd
+                    $host = "localhost";
+                    $usuario = "root";
+                    $pasword = "";
+                    $db = "bd_prueba_2";
+                    $conexion = mysqli_connect($host, $usuario, $pasword, $db);
+
+                    ?>   
+                    <table border = "1">
+                        <tr>
+                            <td>nombres</td>
+                            <td>apellidos</td>
+                            <td>rut</td>
+                            <td>fecha_nacim</td>
+                            <td>nacionalidad</td>
+                            <td>genero</td>
+                            <td>ciudad residencia</td>
+                            <td>foto</td>
+                        </tr>
+
+                        <?php
+                        //Seleciono todo de la tabla noticia
+                        $sql="SELECT * FROM usuarios";
+                        $result=mysqli_query($conexion, $sql);
+
+                        //ordeno imprimir
+                        while($mostrar=mysqli_fetch_array($result)){
+                        ?>
+
+                        <tr>
+                            <td><?php echo $mostrar['nombres']?></td>
+                            <td><?php echo $mostrar['apellidos']?></td>
+                            <td><?php echo $mostrar['rut']?></td>
+                            <td><?php echo $mostrar['fecha_nacim']?></td>
+                            <td><?php echo $mostrar['nacionalidad']?></td>
+                            <td><?php echo $mostrar['genero']?></td>
+                            <td><?php echo $mostrar['ciudad residencia']?></td>
+                            <td><?php echo $mostrar['foto']?></td>
+                        </tr>
+
+                        <?php
+                        }
+                        ?>
+
+                    </table>
+                </div>
             </div>
         </div>
         <div class="row caja2"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: green">
+            <div class="row" style="height: 100px; background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
             </div>
         </div>
