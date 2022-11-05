@@ -1,0 +1,33 @@
+body {
+    background: #ffffff;
+    margin: 0% 0% 0% 0%;
+}
+
+.cuerpo{
+    background: #5d757375;
+    height: 730px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.arriba{
+    background: #ffffff;
+    height: 340px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.abajo{
+    background: #ffffff;
+    height: 310px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.hora{
+    background: #ffffff;
+    text-align: center;
+    height: 30px;
+    width: 90%;
+    margin-left: 5%;
+}
