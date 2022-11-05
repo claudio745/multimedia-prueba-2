@@ -24,7 +24,6 @@
                 </div>
             </div>
         </div>
-        <div class="row caja"></div>
         <div class="container">
             <div class="row" style="height: 600px; background-color: #E3DAC9">
                 <div class="col">
@@ -53,7 +52,6 @@
                         //Seleciono todo de la tabla noticia
                         $sql="SELECT * FROM datos WHERE rut=rut";
                         $result=mysqli_query($conexion, $sql);
-                    
 
                         //ordeno imprimir
                         while($mostrar=mysqli_fetch_array($result)){
@@ -67,9 +65,7 @@
                             <td><?php echo $mostrar['nacionalidad']?></td>
                             <td><?php echo $mostrar['genero']?></td>
                             <td><?php echo $mostrar['ciudad_residencia']?></td>
-                            <td><img height="100px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/></td>
-                       
-
+                            <td><img width="100px" height="100px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/></td>
                         </tr>
 
                         <?php
@@ -80,13 +76,15 @@
                 </div>
             </div>
         </div>
-        <div class="row caja"></div>
         <div class="container">
-            <div class="row" style="height: 100px; background-color: #B0E0DA">
-                <div class="col">Tecnología Multimedia CIF 6459-1, Fecha de entrega: 06/11/2022, Nombre integrantes: Jose Meza, Claudio Alfaro</div>
+            <div class="row" style="background-color: #B0E0DA">
+                <div class="col">Tecnología Multimedia CIF 6459-1</div>
+                <div class="col d-flex justify-content-end">Fecha de entrega: 06/11/2022</div>
+            </div>
+            <div class="row" style="background-color: #B0E0DA">
+                <div class="col d-flex justify-content-end">Nombre integrantes: Jose Meza, Claudio Alfaro</div>
             </div>
         </div>
-        <div class="row caja"></div>
     </div>
 </body>
 </html>
