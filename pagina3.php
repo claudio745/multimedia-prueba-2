@@ -39,16 +39,21 @@
                     ?>   
                     <table class="table table-bordered">
                         <tr>
-                            <td>Nombres</td>
-                            <td>Apellidos</td>
+                            <td>nombres</td>
+                            <td>apellidos</td>
                             <td>rut</td>
-
+                            <td>fecha_nacim</td>
+                            <td>nacionalidad</td>
+                            <td>genero</td>
+                            <td>ciudad residencia</td>
+                            <td>foto</td>
                         </tr>
 
                         <?php
                         //Seleciono todo de la tabla noticia
                         $sql="SELECT * FROM datos";
                         $result=mysqli_query($conexion, $sql);
+                    
 
                         //ordeno imprimir
                         while($mostrar=mysqli_fetch_array($result)){
@@ -58,8 +63,12 @@
                             <td><?php echo $mostrar['nombres']?></td>
                             <td><?php echo $mostrar['apellidos']?></td>
                             <td><?php echo $mostrar['rut']?></td>
-                            <td><button type="button" class="btn btn-info">Ver Perfil</button></td>
-                            <td><button type="button" class="btn btn-danger">Descargar PDF</button></td>
+                            <td><?php echo $mostrar['fecha_nacim']?></td>
+                            <td><?php echo $mostrar['nacionalidad']?></td>
+                            <td><?php echo $mostrar['genero']?></td>
+                            <td><?php echo $mostrar['ciudad_residencia']?></td>
+                            <td><img height="100px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/></td>
+                            
 
                         </tr>
 
