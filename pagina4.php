@@ -17,9 +17,9 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Nacionalidad', 'Usuarios'],
-          ['Chileno',     12],
-          ['Canadiense',  13],
-          ['Uruguaya',    10],
+          ['Chileno',    3],
+          ['Canadiense', 2],
+          ['Uruguaya',   3],
         ]);
 
         var options = {
@@ -28,6 +28,26 @@
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Vida', 'Edad', { role: 'style' }],
+            ['Joven', 16, 'blue'],            
+            ['Adulto', 45, 'blue'],            
+            ['Adulto mayor', 80, 'blue'],
+        ]);
+
+        var options = {'title':'Edad usuarios',
+            'width':600,
+            'height':300};
+        var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
         chart.draw(data, options);
       }
     </script>
@@ -49,11 +69,13 @@
         <div class="container mt-4">
             <div class="row" style="height: 300px; background-color: #E3DAC9">
                 <div class="col d-flex justify-content-center">
-                    <div id="piechart" style="width: 300px; height: 300px;"></div> 
+                    <div id="piechart" style="width: 600px; height: 300px;"></div> 
                 </div>
             </div>
             <div class="row mt-4" style="height: 300px; background-color: #E3DAC9">
-                <div class="col">Grafico</div>
+                <div class="col d-flex justify-content-center">
+                    <div id="chart_div"></div>
+                </div>
             </div>
         </div>
         <div class="container mt-4">
