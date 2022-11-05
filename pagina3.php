@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <div class="row" style="height: 600px; background-color: #E3DAC9">
                 <div class="col">
                 <?php
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <div class="row" style="background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1</div>
                 <div class="col d-flex justify-content-end">Fecha de entrega: 06/11/2022</div>
