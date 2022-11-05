@@ -27,7 +27,48 @@
         <div class="row caja"></div>
         <div class="container">
             <div class="row" style="height: 600px; background-color: #E3DAC9">
-                <div class="col">Perfil</div>
+                <div class="col">
+                <?php
+                    //Conexion con bd
+                    $host = "localhost";
+                    $usuario = "root";
+                    $pasword = "";
+                    $db = "bd_prueba_2";
+                    $conexion = mysqli_connect($host, $usuario, $pasword, $db);
+
+                    ?>   
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Nombres</td>
+                            <td>Apellidos</td>
+                            <td>rut</td>
+
+                        </tr>
+
+                        <?php
+                        //Seleciono todo de la tabla noticia
+                        $sql="SELECT * FROM datos";
+                        $result=mysqli_query($conexion, $sql);
+
+                        //ordeno imprimir
+                        while($mostrar=mysqli_fetch_array($result)){
+                        ?>
+
+                        <tr>
+                            <td><?php echo $mostrar['nombres']?></td>
+                            <td><?php echo $mostrar['apellidos']?></td>
+                            <td><?php echo $mostrar['rut']?></td>
+                            <td><button type="button" class="btn btn-info">Ver Perfil</button></td>
+                            <td><button type="button" class="btn btn-danger">Descargar PDF</button></td>
+
+                        </tr>
+
+                        <?php
+                        }
+                        ?>
+
+                    </table>
+                </div>
             </div>
         </div>
         <div class="row caja"></div>
