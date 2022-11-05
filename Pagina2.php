@@ -47,19 +47,19 @@
 
                         <?php
                         //Seleciono todo de la tabla noticia
-                        $sql="SELECT * FROM datos";
+                        $sql="SELECT nombres, apellidos, rut FROM datos";
                         $result=mysqli_query($conexion, $sql);
 
                         //ordeno imprimir
                         while($mostrar=mysqli_fetch_array($result)){
                         ?>
-
+                        
                         <tr>
                             <td><?php echo $mostrar['nombres']?></td>
                             <td><?php echo $mostrar['apellidos']?></td>
                             <td><?php echo $mostrar['rut']?></td>
-                            <td><a href="pagina3.php"><button type="button" class="btn btn-info">Ver Perfil</button></a></td>
-                            <td><a href="pagina3.php"><button type="button" class="btn btn-danger">Descargar PDF</button></a></td>
+                            <td><a href="pagina3.php"> <button type="button" class="btn btn-info">Ver Perfil</button></a></td>
+                            <td><a href=""><button type="button" class="btn btn-danger">Descargar PDF</button></a></td>
                         </tr>
 
                         <?php
