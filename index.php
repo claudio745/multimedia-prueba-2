@@ -24,18 +24,18 @@
             </div>
         </div>
         <div class="container">
-            <div class="row" style="height: 600px; background-color: #E3DAC9">
+            <div class="row" style="height: 750px; background-color: #E3DAC9">
                 <div class="col-8"> <h3>Formulario</h3>
                     <br>
                     <form  action= "procesarform.php" method= "POST" enctype = "multipart/form-data"> 
                         <label for="Nombres"> Nombres: </label>
-                        <input type="text" name="Nombres" id="Nombres">
+                        <input type="text" class="form-control" name="Nombres" id="Nombres">
                         <br><br>
                         <label for="Apellidos"> Apellidos: </label>
-                        <input type="text" name="Apellidos" id="Apellidos">
+                        <input type="text" class="form-control" name="Apellidos" id="Apellidos">
                         <br><br>
                         <label> Rut: </label>
-                        <input type="text" name="Rut" id="Rut" placeholder="11111111-1"/>
+                        <input type="text" class="form-control" name="Rut" id="Rut" placeholder="11111111-1"/>
                         <br><br>
                         <label> Fecha de nacimiento: </label>
                         <input type="date" name="fecha" id="fecha" value="2022-11-04" min="1900-01-01" max="2004-01-01"> 
@@ -56,7 +56,7 @@
                         </select>
                         <br><br>
                         <label>Ciudad de residencia: </label>
-                        <input type="text" name="ciudad" id="ciudad">
+                        <input type="text" class="form-control" name="ciudad" id="ciudad">
                         <br><br>
                         <label> Foto: </label>
                         <input type = "file" REQUIRED name = "imagen"><br><br>
