@@ -37,21 +37,17 @@
                     $conexion = mysqli_connect($host, $usuario, $pasword, $db);
 
                     ?>   
-                    <table border = "1">
+                    <table class="table table-bordered">
                         <tr>
-                            <td>nombres</td>
-                            <td>apellidos</td>
+                            <td>Nombres</td>
+                            <td>Apellidos</td>
                             <td>rut</td>
-                            <td>fecha_nacim</td>
-                            <td>nacionalidad</td>
-                            <td>genero</td>
-                            <td>ciudad residencia</td>
-                            <td>foto</td>
+
                         </tr>
 
                         <?php
                         //Seleciono todo de la tabla noticia
-                        $sql="SELECT * FROM usuarios";
+                        $sql="SELECT * FROM datos";
                         $result=mysqli_query($conexion, $sql);
 
                         //ordeno imprimir
@@ -62,11 +58,9 @@
                             <td><?php echo $mostrar['nombres']?></td>
                             <td><?php echo $mostrar['apellidos']?></td>
                             <td><?php echo $mostrar['rut']?></td>
-                            <td><?php echo $mostrar['fecha_nacim']?></td>
-                            <td><?php echo $mostrar['nacionalidad']?></td>
-                            <td><?php echo $mostrar['genero']?></td>
-                            <td><?php echo $mostrar['ciudad residencia']?></td>
-                            <td><?php echo $mostrar['foto']?></td>
+                            <td><button type="button" class="btn btn-info">Ver Perfil</button></td>
+                            <td><button type="button" class="btn btn-danger">Descargar PDF</button></td>
+
                         </tr>
 
                         <?php
