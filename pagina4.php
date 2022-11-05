@@ -47,17 +47,17 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <div class="row" style="height: 300px; background-color: #E3DAC9">
                 <div class="col d-flex justify-content-center">
                     <div id="piechart" style="width: 300px; height: 300px;"></div> 
                 </div>
             </div>
-            <div class="row" style="height: 300px; background-color: #E3DAC9">
+            <div class="row mt-4" style="height: 300px; background-color: #E3DAC9">
                 <div class="col">Grafico</div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <div class="row" style="background-color: #B0E0DA">
                 <div class="col">Tecnología Multimedia CIF 6459-1</div>
                 <div class="col d-flex justify-content-end">Fecha de entrega: 06/11/2022</div>
