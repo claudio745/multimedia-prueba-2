@@ -16,10 +16,4 @@
         $query = "INSERT INTO  datos (nombres, apellidos, rut, fecha_nacim, nacionalidad, genero, ciudad_residencia , foto) VALUES ('$nombres', '$apellidos', '$rut', '$fecha_nacim', '$nacionalidad', '$genero', '$ciudad' , '$foto')";
         $resultado = $conexion->query($query);
     
-        if($resultado){
-            echo "Se han insertado los datos correctamente";
-        }else{
-            echo "No se han guardado los datos";
-        }
-    
     }
