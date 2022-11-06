@@ -68,6 +68,8 @@
                             <h5> ■ Genero: <?php echo $mostrar['genero']?></h5>
                             <h5> ■ Ciudad de residencia: <?php echo $mostrar['ciudad_residencia']?></h5>
                         </tr>
+                        <br><br><br><br><br><br><br>
+                        <a href="generarpdf.php?r=<?php echo $mostrar['rut'];?>"><button type="button" class="btn btn-danger">Descargar PDF</button></a>
 
                         <?php
                         }
