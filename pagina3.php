@@ -48,7 +48,10 @@
 
                         <?php
                         //Seleciono todo de la tabla noticia
-                        $sql="SELECT * FROM datos WHERE rut=rut";
+                        $r = 0;
+                        if (isset($r))
+                            $r = $_GET['r'];
+                        $sql="SELECT * FROM datos WHERE rut='$r'";
                         $result=mysqli_query($conexion, $sql);
 
                         //ordeno imprimir
