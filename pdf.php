@@ -11,7 +11,14 @@
 <body>
     <div class="cuerpo">
         <div class="arriba">
-            <div class="img">j</div>
+            <div class="img">
+                <img width="150px" height="150px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/>
+            </div>
+            <div>
+                <h3>Datos:</h3>
+                <p>rut: </P>
+                <p>Fecha de nacimiento: </p>
+            </div>
         </div>
         <br></br>
         <div class="abajo"></div>
