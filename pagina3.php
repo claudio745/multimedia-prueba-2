@@ -35,17 +35,6 @@
                 
                     ?>   
                     <table class="table table-bordered">
-                        <tr>
-                            <td>nombres</td>
-                            <td>apellidos</td>
-                            <td>rut</td>
-                            <td>fecha_nacim</td>
-                            <td>nacionalidad</td>
-                            <td>genero</td>
-                            <td>ciudad residencia</td>
-                            <td>foto</td>
-                        </tr>
-
                         <?php
                         //Seleciono todo de la tabla noticia
                         $r = 0;
@@ -58,15 +47,26 @@
                         while($mostrar=mysqli_fetch_array($result)){
                         ?>
 
+                        <div class="row">
+                            <div class="col-2 mt-2">
+                                <img width="200px" height="200px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/>
+                            </div>
+                            <div class="col-10 mt-4">
+                                <h2><?php echo $mostrar['nombres']?> <?php echo $mostrar['apellidos']?></h2>
+                                <h5>Rut: <?php echo $mostrar['rut']?></h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3>Datos: </h3>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+
                         <tr>
-                            <td><?php echo $mostrar['nombres']?></td>
-                            <td><?php echo $mostrar['apellidos']?></td>
-                            <td><?php echo $mostrar['rut']?></td>
-                            <td><?php echo $mostrar['fecha_nacim']?></td>
-                            <td><?php echo $mostrar['nacionalidad']?></td>
-                            <td><?php echo $mostrar['genero']?></td>
-                            <td><?php echo $mostrar['ciudad_residencia']?></td>
-                            <td><img width="100px" height="100px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['foto']);?>"/></td>
+                            <h5> ■ Fecha nacimiento: <?php echo $mostrar['fecha_nacim']?></h5>
+                            <h5> ■ Nacionalidad: <?php echo $mostrar['nacionalidad']?></h5>
+                            <h5> ■ Genero: <?php echo $mostrar['genero']?></h5>
+                            <h5> ■ Ciudad de residencia: <?php echo $mostrar['ciudad_residencia']?></h5>
                         </tr>
 
                         <?php
