@@ -56,7 +56,7 @@
                             <td><?php echo $mostrar['apellidos']?></td>
                             <td><?php echo $mostrar['rut']?></td>
                             <td><a href="pagina3.php?r=<?php echo $mostrar['rut'];?>"> <button type="button" class="btn btn-info">Ver Perfil</button></a></td>
-                            <td><a href=""><button type="button" class="btn btn-danger">Descargar PDF</button></a></td>
+                            <td><a href="generarpdf.php?r=<?php echo $mostrar['rut'];?>"><button type="button" class="btn btn-danger">Descargar PDF</button></a></td>
                         </tr>
 
                         <?php
