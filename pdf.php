@@ -10,7 +10,9 @@
 </head>
 <body>
     <div class="cuerpo">
-        <div class="arriba"></div>
+        <div class="arriba">
+            <div class="img">j</div>
+        </div>
         <br></br>
         <div class="abajo"></div>
         <div class="hora">
