@@ -58,7 +58,7 @@
     <div class="container" style="background-color: gray">
         <div class="container">
             <div class="row" style="height: 100px; background-color: #d9afa2">
-                <div class="col d-flex justify-content-center">Menu de navegacion:
+                <div class="col mt-4 d-flex justify-content-center">Menu de navegacion:
                     <a href = "pagina3.php"><button type="button" class="btn btn-link">Inicio</button></a>|
                     <a href = "index.php"><button type="button" class="btn btn-link">Ingresar Persona</button></a>|
                     <a href = "pagina2.php"><button type="button" class="btn btn-link">Lista Persona</button></a>|
