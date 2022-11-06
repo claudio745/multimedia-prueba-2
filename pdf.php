@@ -21,7 +21,28 @@
             </div>
         </div>
         <br></br>
-        <div class="abajo"></div>
+        <div class="abajo">
+            
+            <?php
+                require 'phpqrcode/qrlib.php';
+                $dir = 'temp/';
+
+                if(!file_exists($dir)){
+                    mkdir($dir);
+                }
+                $filename = $dir.'test.png';
+
+                $tamanio = 10;
+                $level = 'M';
+                $framesize = 3;
+                $contenido = 'Hola Mundo';
+
+                QRcode::png($contenido, $filename, $level, $tamanio, $framesize);
+
+                echo '<img src="'.$filename.'"/>';
+
+            ?>
+        </div>
         <div class="hora">
             <div id="current_date">
                 <script>
